@@ -1,23 +1,17 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Example Component</div>
+    <div>
+        <h1>Vue Router Demo App</h1>
 
-                    <div class="panel-body">
-                        I'm an example component!
-                    </div>
-                </div>
-            </div>
+        <p>
+            <router-link :to="{ name: 'home' }">Articles</router-link> |
+            <router-link :to="{ name: 'article' }">Single Article</router-link>
+        </p>
+
+        <div class="container">
+            <router-view></router-view>
         </div>
     </div>
 </template>
-
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+    export default {}
 </script>

@@ -32,4 +32,8 @@ Route::put('article', 'ArticleController@store');
 // Delete article
 Route::delete('article/{id}', 'ArticleController@destroy');
 
+// Create new commentary
+Route::post('commentary', 'CommentariesController@store');
 
+// List commentaries
+Route::get('commentaries/{id}', 'CommentariesController@show');
